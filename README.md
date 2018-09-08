@@ -121,6 +121,10 @@ Source code store in "data_maker", detail please check [here](data_maker/README.
 <p align="center">Predict crowd map, counting is 698</p>
 </ul>
 
+3. crowd counting paper collection, thanks for **gjy3035**
+**Github:**[ Awesome-Crowd-Counting](https://github.com/gjy3035/Awesome-Crowd-Counting)
+**Density Map Generation from Key Points:** [[Matlab Code]](https://github.com/aachenhang/crowdcount-mcnn/tree/master/data_preparation) [[Python Code]](https://github.com/leeyeehoo/CSRNet-pytorch/blob/master/make_dataset.ipynb)
+
 ### Details
 1. Tring to delete dropout layers.
 
