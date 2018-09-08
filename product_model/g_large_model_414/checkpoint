@@ -1,0 +1,2 @@
+model_checkpoint_path: "g_large.ckpt"
+all_model_checkpoint_paths: "g_large.ckpt"

@@ -1,0 +1,2 @@
+model_checkpoint_path: "mp_gan.model-35000"
+all_model_checkpoint_paths: "mp_gan.model-35000"

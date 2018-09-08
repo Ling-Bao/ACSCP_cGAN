@@ -1,0 +1,120 @@
+./ACSCP/
+├── checkpoint # 模型保存目录
+│   ├── gan_mp_1_240_411 # dropout, 100 epoch, lambda_c = 0
+│   │   ├── checkpoint
+│   │   ├── mp_gan.model-1.data-00000-of-00001
+│   │   ├── mp_gan.model-1.index
+│   │   └── mp_gan.model-1.meta
+│   ├── gan_mp_1_240_412 # dropout, 300 epoch, (100 epoch: lambda_c = 0, 200 epoch: lambda_c = 10)
+│   │   ├── checkpoint
+│   │   ├── mp_gan.model-35000.data-00000-of-00001
+│   │   ├── mp_gan.model-35000.index
+│   │   └── mp_gan.model-35000.meta
+│   ├── gan_mp_bn_1_240_411 # no dropout, 100 epoch, lambda_c = 0
+│   │   ├── checkpoint
+│   │   ├── mp_gan.model-1.data-00000-of-00001
+│   │   ├── mp_gan.model-1.index
+│   │   └── mp_gan.model-1.meta
+│   ├── gan_mp_bn_1_240_414 # no dropout, 300 epoch, (100 epoch: lambda_c = 0, 200 epoch: lambda_c = 10)
+│   │   ├── checkpoint
+│   │   ├── mp_gan.model-35000.data-00000-of-00001
+│   │   ├── mp_gan.model-35000.index
+│   │   └── mp_gan.model-35000.meta
+├── DataMaker # 人群密度估计图真值标签制作
+│   ├── Readme.html
+│   ├── Readme.md
+│   ├── step1
+│   │   ├── data_collect.py
+│   │   └── UAVData
+│   │       ├── test_data
+│   │       │   ├── ground_truth
+│   │       │   ├── test_gt
+│   │       │   ├── test_img
+│   │       │   └── test_npy
+│   │       └── train_data
+│   │           ├── ground_truth
+│   │           │   ├── IMG_1.mat
+│   │           │   └── IMG_2.mat
+│   │           ├── train_gt
+│   │           │   ├── IMG_1.mat
+│   │           │   └── IMG_2.mat
+│   │           ├── train_img
+│   │           │   ├── IMG_1.jpg
+│   │           │   └── IMG_2.jpg
+│   │           └── train_npy
+│   ├── step2
+│   │   └── annotation
+│   │       ├── Annotated_data
+│   │       ├── Checked_data
+│   │       ├── GT_data
+│   │       ├── GT_mat
+│   │       ├── Image_data
+│   │       │   ├── IMG_10.jpg
+│   │       │   ├── IMG_11.jpg
+│   │       │   ├── IMG_12.jpg
+│   │       │   ├── IMG_13.jpg
+│   │       │   ├── IMG_14.jpg
+│   │       │   ├── IMG_15.jpg
+│   │       │   ├── IMG_16.jpg
+│   │       │   ├── IMG_17.jpg
+│   │       │   ├── IMG_1.jpg
+│   │       │   ├── IMG_2.jpg
+│   │       │   ├── IMG_3.jpg
+│   │       │   ├── IMG_4.jpg
+│   │       │   ├── IMG_5.jpg
+│   │       │   ├── IMG_6.jpg
+│   │       │   ├── IMG_7.jpg
+│   │       │   ├── IMG_8.jpg
+│   │       │   └── IMG_9.jpg
+│   │       ├── pro_check
+│   │       │   ├── data_marker.fig
+│   │       │   ├── data_marker.m
+│   │       │   └── default.jpg
+│   │       └── pro_mark0
+│   │           ├── data_marker.fig
+│   │           ├── data_marker.m
+│   │           └── default.jpg
+│   └── step3
+│       ├── map_mcnn.m
+│       ├── Mat2Npy2.py
+│       ├── searchhead.m
+│       └── UAVData
+│           ├── test_data
+│           │   ├── ground_truth
+│           │   ├── test_gt
+│           │   ├── test_img
+│           │   └── test_npy
+│           └── train_data
+│               ├── ground_truth
+│               │   ├── IMG_1.mat
+│               │   └── IMG_2.mat
+│               ├── train_gt
+│               │   ├── IMG_1.mat
+│               │   └── IMG_2.mat
+│               ├── train_img
+│               │   ├── IMG_1.jpg
+│               │   └── IMG_2.jpg
+│               └── train_npy
+│                   ├── IMG_1.npy
+│                   └── IMG_2.npy
+├── doc              # 文档
+│   ├── Crowd Counting via Adversarial Cross-Scale Consistency Pursuit.pdf
+│   ├── directory_tree.pdf
+│   └── Structured Inhomogeneous Density Map Learningfor Crowd Counting.pdf
+├── release              # 产品发布
+│   ├── version0.1.0.tar.gz
+├── main.py # 主函数
+├── Mat2Npy2.py      # transfer mat to npy
+├── model33.py       # dropout model
+├── model44.py       # no dropout model
+├── ops.py           # basic operator
+├── README.md
+├── requirements.txt # 依赖软件
+├── utils.py         # basic image process operator
+├── vgg_16.ckpt      # pretrained VGG16 model in ImageNet for classify task
+├── vgg2_model       # split before relu2_2, save model named vgg_2
+│   ├── checkpoint
+│   ├── vgg_2.ckpt.data-00000-of-00001
+│   ├── vgg_2.ckpt.index
+│   └── vgg_2.ckpt.meta
+└── vgg_feature.py   # vgg_2 model relative, and using to compute perceptual loss
