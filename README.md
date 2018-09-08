@@ -66,8 +66,8 @@ pip install -r requirements.txt
 2. Get the code
 
 ```
-git clone ******
-cd map_gen
+git clone git@github.com:Ling-Bao/ACSCP_cGAN.git
+cd ACSCP_cGAN
 ```
 
 ### Preparation
