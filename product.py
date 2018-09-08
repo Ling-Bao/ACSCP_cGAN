@@ -24,7 +24,7 @@ from matplotlib import pyplot as plt
 import cv2
 
 # 项目库
-from lib.ops import *
+from lib_ops.ops import *
 
 # 机器学习库
 import tensorflow as tf

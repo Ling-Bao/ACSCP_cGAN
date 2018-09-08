@@ -28,8 +28,8 @@ from six.moves import xrange
 from matplotlib import pyplot as plt_model
 
 # 项目库
-from lib.ops import *
-from lib.utils import *
+from lib_ops.ops import *
+from lib_ops.utils import *
 from vgg_feature import VGG2
 
 # 机器学习库
