@@ -87,7 +87,7 @@ unzip Data.zip
 ### Train/Eval/Release
 Train is easy, just using following step.
 
-1. Train. Using [main.py](main.py) to evalute crowd counting model
+1. Train. Using [main.py](main.py) to train crowd counting model
 
 ```
 python main.py --phase train
@@ -103,15 +103,15 @@ OR
 python main.py --phase inference
 ```
 
+3. Model release
+ Model release. Using [product.py](product.py) to release crowd counting model. Download release version 1.0.0, please click on [here](release/version1.0.0.tar.gz)
+
 ### Addtional
 1. Crowd map generation tools
 Source code store in "data_maker", detail please check [here](data_maker/README.md).
 **Note: **This tools write by matlab, please install matlab.
-
-2. Model release
- Model release. Using [product.py](product.py) to release crowd counting model. Download release version 0.1.0, please click on [here](release/version1.0.0.tar.gz)
  
- 3. Results
+2. Results
 <ul align="center">
 <img src="data/data_im/test_im/IMG_2_A.jpg" alt="formulation" width="240px">
 <p align="center">Original image</p>
