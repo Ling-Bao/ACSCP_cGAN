@@ -78,7 +78,7 @@ ShanghaiTech Dataset makes by Zhang Y, Zhou D, Chen S, et al. For more detail, p
 [Baidu Yun](https://pan.baidu.com/s/1gccvnvIeLgQZCVuA6iZEjA) 
 Password: yvs1
 
-3. Unzip dtaset to map_gen root directory
+3. Unzip dataset to ACSCP_cGAN root directory
 
 ```
 unzip Data.zip
