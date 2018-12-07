@@ -128,11 +128,6 @@ Source code store in "data_maker", detail please check [here](data_maker/README.
 ### Details
 1. Tring to delete dropout layers.
 
-2. Improving activation funtion for last layer to adapt crowd counting map estimation.
-<p align="center">
-<img src="doc/formulation.png" alt="formulation" width="240px">
-</p>
-
 =======
 [![License](http://gplv3.fsf.org/gplv3-127x51.png)](LICENSE)
 >>>>>>> TAIL
